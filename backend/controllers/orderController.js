@@ -22,7 +22,7 @@ import Stripe from "stripe";
 const currency = "usd";
 const deliveryCharge = 10;
 // gateway initialize
-const stripe = new Stripe(process.env.Stripe_SECRET_KEY);
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 // Placing orders using COD Method
 const placeOrder = async (req, res) => {
   try {
